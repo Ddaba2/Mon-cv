@@ -1,9 +1,16 @@
+body {
+  font-size: 16px;
+}
+
 .body {
     color: #F5F5F5;
+    font-size: 16px;
     font-family: 'Arial', sans-serif;
     background-color: #212E53;
     text-align: center;
     padding: 50px;
+
+
   }
   
   button {
@@ -32,11 +39,12 @@
 }
 .left{
   background-color: #F5F5F5;
-  padding: 20px;
+  padding: 10px;
   color: #000;
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: center;  
+  font-size: 16px;
 }
 .profile{
   height: 80vh;
@@ -46,38 +54,33 @@
   border-bottom-right-radius: 60%;
   border-bottom-left-radius: 60%;
 }
-.img{
-  width: 75%;
-  height: 60vh;
-  margin-left: 10%;
-  padding: 1px;
+
+.img {
+  width: 60%;
+  margin: 40px auto;
+  aspect-ratio: 1 / 1; /* Pour garder une forme carrée avant le border-radius */
+  padding: 5px;
   border-radius: 50%;
-  background-color: #F5F5F5;
+  background-color: #f5f5f5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden; /* Cache les débordements éventuels */
 }
-.img img{
+
+.img img {
+  width: 100%;
+  height: 100%;
   object-fit: cover;
-  width: 93%;
-  clip-path: circle(80%);
-  height: 95%;
-  border-radius: 65%;
-  padding: 4%;
-}  
+  border-radius: 50%;
+}
   
 .contacte {
   margin-top: 20px;
   width: 100%; /* ou une largeur spécifique selon votre mise en page */
 }
 
-.contacte i {
-  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
-  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
-  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
-  padding: 4px;               /* Espace autour de l’icône */
-  margin-right: 8px;          /* Espace entre l’icône et le texte */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .contact-title {
   text-align: center;
@@ -88,55 +91,47 @@
   text-align: left;
 }
 
-.contact-info i {
-  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
-  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
-  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
-  padding: 4px;               /* Espace autour de l’icône */
-  margin-right: 8px;          /* Espace entre l’icône et le texte */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .education {
   background-color: #333333;
-  color: white; /* Texte en blanc */
-  height: 90vh; /* Ajuster selon la largeur souhaitée */
+  font-size: 16px;
+  color: white;
   padding: 20px;
-  justify-content: center;
-  border-top-left-radius: 140px; /* Arrondi en haut */
-  border-top-right-radius: 140px;
-  border-bottom-left-radius: 10px; /* Coins inférieurs légèrement arrondis */
-  border-bottom-right-radius: 10px;
   text-align: left;
+    
+  /* Bordures arrondies */
+  border-top-left-radius: 999px; 
+  border-top-right-radius: 999px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
+
+  /* Largeur adaptée */
+  width: 100%;
+  box-sizing: border-box;
+
 }
+
+.fe{
+  margin-top: 60px;
+  }
 
 .education-header {
   display: flex;
   align-items: center;
-  justify-content: center; /* Centre le texte */
+  justify-content: center;
   text-align: center;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 15px; /* Espace sous le titre */
+  margin-bottom: 15px;
+  color: white;
+  margin-top: 40px;
 }
 
-.education-header i {
-  background-color: #040404;  /* Couleur de fond (modifiable) */
-  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
-  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
-  padding: 4px;               /* Espace autour de l’icône */
-  margin-right: 8px;          /* Espace entre l’icône et le texte */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .right {
-
+ 
+  font-size: 16px;
   color: #000;
-
 
 }
 
@@ -150,30 +145,11 @@
   text-align: justify; /* Justifie le texte */
 }
 
-.apropos i {
-  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
-  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
-  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
-  padding: 4px;               /* Espace autour de l’icône */
-  margin-right: 8px;          /* Espace entre l’icône et le texte */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .experience {
   width: 100%;
-}
-
-.experience i {
-  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
-  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
-  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
-  padding: 4px;               /* Espace autour de l’icône */
-  margin-right: 8px;          /* Espace entre l’icône et le texte */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
+  font-size: 16px;
 }
 
 p {
@@ -190,47 +166,50 @@ p {
  
   }
 
-.competence i {
-  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
-  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
-  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
-  padding: 4px;               /* Espace autour de l’icône */
-  margin-right: 8px;          /* Espace entre l’icône et le texte */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
+
 
 .langue {
   float: left;
   margin-top: 40px;
 }
 
-.langue i {
-  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
-  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
-  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
-  padding: 4px;               /* Espace autour de l’icône */
-  margin-right: 8px;          /* Espace entre l’icône et le texte */
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-}
 
 .loisir {
   float: right;
   margin-top: 40px;
 }
 
-.loisir i {
-  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
-  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
-  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
-  padding: 4px;               /* Espace autour de l’icône */
-  margin-right: 8px;          /* Espace entre l’icône et le texte */
+i {
+  background-color: #e0e0e0;
+  color: #000;
+  border: none;
+  border-radius: 50%;
+  padding: 6px;
+  margin-right: 8px;
   display: inline-flex;
   align-items: center;
   justify-content: center;
+  font-size: 16px;
+  transition: font-size 0.3s ease;
+  
+
 }
 
-@media all and (max-width:500px);
+@media only screen and (max-width: 600px) {
+  body {
+    font-size: 14px;
+  }
+
+  i {
+    font-size: 14px; /* Taille encore plus petite pour les petits écrans */
+      margin-right: 8px;
+  }
+
+.right{
+  font-size: 14px;
+}
+
+.left{
+  font-size: 14px;
+}
+}

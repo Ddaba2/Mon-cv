@@ -10,4 +10,5 @@ const target = document.querySelector('.conte');
     isColored = !isColored; // On inverse l'état
   });
 
-
+ 
+  
