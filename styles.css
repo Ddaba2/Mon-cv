@@ -47,12 +47,13 @@ body {
   font-size: 16px;
 }
 .profile{
-  height: 80vh;
+  height: 100%;
   color: white;
   text-align: center;
   background-color: #333333;
-  border-bottom-right-radius: 60%;
-  border-bottom-left-radius: 60%;
+  border-bottom-right-radius: 999px;
+  border-bottom-left-radius: 999px;
+  box-sizing: border-box;
 }
 
 .img {
@@ -98,7 +99,7 @@ body {
   color: white;
   padding: 20px;
   text-align: left;
-    
+  
   /* Bordures arrondies */
   border-top-left-radius: 999px; 
   border-top-right-radius: 999px;
@@ -167,16 +168,27 @@ p {
   }
 
 
-
+.leur{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.lang1{
+  display: block;
+}
 .langue {
-  float: left;
+  align-items: center;
+  /* float: left; */
+  display: flex;
   margin-top: 40px;
 }
 
 
 .loisir {
-  float: right;
-  margin-top: 40px;
+  align-items: center;
+    /* float: left; */
+    display: flex;
+    margin-top: 40px;
 }
 
 i {

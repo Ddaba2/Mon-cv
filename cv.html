@@ -9,6 +9,7 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
 </head>
 <body>
 <h1>CV Daba DIALLO</h1>
@@ -17,7 +18,7 @@
   
   
 
-  <main class="conte">
+  <main class="conte" id="download">
 
 <section class="left">
 
@@ -126,33 +127,48 @@
       </div>
       </div>
 
-  <div class="langue">
-    <b><i class="fa fa-globe" aria-hidden="true"></i> LANGUES</b> 
-  <ul>
-    <li>Bambara</li> 
-    <li>Français</li> 
-    <li>Anglais</li> 
-  </ul>
-</div>
+      <div class="leur">
+        <div class="lang1">
 
-<div class="loisir">
-  <b><i class="fa fa-flag-checkered" aria-hidden="true"></i> LOISIRS</b> 
-  <ul>
-  <li>Football</li> 
-  <li>Musique</li> 
-  <li>Voyager</li> 
-  <li>Lire</li> 
-</div>
+          <div class="langue">
+            <div class="icon">
+              <i class="fa fa-globe" aria-hidden="true"></i>
+            </div>
+            <span> LANGUES</span> 
+          
+        </div>
+        <ul>
+          <li>Bambara</li> 
+          <li>Français</li> 
+          <li>Anglais</li> 
+        </ul>
+        </div>
+      <div class="lang2">
+
+        <div class="loisir">
+          <div class="icon">
+            <i class="fa fa-flag-checkered" aria-hidden="true"></i>
+          </div>
+          <span> LOISIRS</span> 
+        </div>
+        <ul>
+          <li>Football</li> 
+          <li>Musique</li> 
+          <li>Voyager</li> 
+          <li>Lire</li> 
+          </ul>
+      </div>
+
+      </div>
 
 </section>
 
 <button id="changeColor">Changer de couleur</button>  
 
-<button id="downloadPDF">Télécharger mon CV</button> 
+<button onclick="download()">Télécharger mon CV</button> 
 
   </main> 
- <!-- Inclusion de la bibliothèque html2pdf.js -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+
 
 <!-- Inclusion de votre script personnalisé -->
 <script src="script.js"></script>
