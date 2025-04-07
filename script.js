@@ -10,12 +10,12 @@ const target = document.querySelector('.conte');
     isColored = !isColored; // On inverse l'état
   });
 //Téléchargement
-function download() {
-  const element = document.querySelector("download"); // ou document.getElementById("cv");
 
+function download() {
+  const element = document.getElementById('download'); // Assurez-vous que l'ID correspond à celui de l'élément que vous souhaitez convertir
   const options = {
-    margin: 0.5,
-    filename: 'Daba DIALLO CV.pdf',
+    margin: 1,
+    filename: 'CV_Daba_DIALLO.pdf',
     image: { type: 'jpeg', quality: 0.98 },
     html2canvas: { scale: 2 },
     jsPDF: { unit: 'in', format: 'a4', orientation: 'portrait' }
