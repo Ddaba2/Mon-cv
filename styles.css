@@ -1,0 +1,236 @@
+.body {
+    color: #F5F5F5;
+    font-family: 'Arial', sans-serif;
+    background-color: #212E53;
+    text-align: center;
+    padding: 50px;
+  }
+  
+  button {
+    background-color: #49919E;
+    color: #0b0b0b;
+    padding: 15px 32px;
+    text-align: center;
+    font-size: 16px;
+    margin: 20px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  button:hover {
+    background-color: #45a049;
+  }
+  
+.conte {
+  padding: 20px auto;
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+}
+.left{
+  background-color: #F5F5F5;
+  padding: 20px;
+  color: #000;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.profile{
+  height: 80vh;
+  color: white;
+  text-align: center;
+  background-color: #333333;
+  border-bottom-right-radius: 60%;
+  border-bottom-left-radius: 60%;
+}
+.img{
+  width: 75%;
+  height: 60vh;
+  margin-left: 10%;
+  padding: 1px;
+  border-radius: 50%;
+  background-color: #F5F5F5;
+}
+.img img{
+  object-fit: cover;
+  width: 93%;
+  clip-path: circle(80%);
+  height: 95%;
+  border-radius: 65%;
+  padding: 4%;
+}  
+  
+.contacte {
+  margin-top: 20px;
+  width: 100%; /* ou une largeur spécifique selon votre mise en page */
+}
+
+.contacte i {
+  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
+  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
+  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
+  padding: 4px;               /* Espace autour de l’icône */
+  margin-right: 8px;          /* Espace entre l’icône et le texte */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contact-title {
+  text-align: center;
+  margin-bottom: 10px; /* espace entre le titre et les informations */
+}
+
+.contact-info {
+  text-align: left;
+}
+
+.contact-info i {
+  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
+  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
+  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
+  padding: 4px;               /* Espace autour de l’icône */
+  margin-right: 8px;          /* Espace entre l’icône et le texte */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.education {
+  background-color: #333333;
+  color: white; /* Texte en blanc */
+  height: 90vh; /* Ajuster selon la largeur souhaitée */
+  padding: 20px;
+  justify-content: center;
+  border-top-left-radius: 140px; /* Arrondi en haut */
+  border-top-right-radius: 140px;
+  border-bottom-left-radius: 10px; /* Coins inférieurs légèrement arrondis */
+  border-bottom-right-radius: 10px;
+  text-align: left;
+}
+
+.education-header {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Centre le texte */
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 15px; /* Espace sous le titre */
+}
+
+.education-header i {
+  background-color: #040404;  /* Couleur de fond (modifiable) */
+  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
+  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
+  padding: 4px;               /* Espace autour de l’icône */
+  margin-right: 8px;          /* Espace entre l’icône et le texte */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.right {
+
+  color: #000;
+
+
+}
+
+.apropos b {
+  display: block; /* Transforme la balise <b> en élément de type bloc */
+  text-align: center; /* Centre le texte */
+  margin-bottom: 10px; /* Ajoute une marge en bas pour l'espacement */
+}
+
+.apropos p {
+  text-align: justify; /* Justifie le texte */
+}
+
+.apropos i {
+  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
+  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
+  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
+  padding: 4px;               /* Espace autour de l’icône */
+  margin-right: 8px;          /* Espace entre l’icône et le texte */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.experience {
+  width: 100%;
+}
+
+.experience i {
+  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
+  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
+  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
+  padding: 4px;               /* Espace autour de l’icône */
+  margin-right: 8px;          /* Espace entre l’icône et le texte */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+p {
+  position: relative;
+}
+
+.date {
+  float: right;
+}
+
+.comp {
+    margin-top: 15px; /* espace en bas de chaque compétence */
+    margin-bottom: 15px;
+ 
+  }
+
+.competence i {
+  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
+  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
+  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
+  padding: 4px;               /* Espace autour de l’icône */
+  margin-right: 8px;          /* Espace entre l’icône et le texte */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.langue {
+  float: left;
+  margin-top: 40px;
+}
+
+.langue i {
+  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
+  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
+  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
+  padding: 4px;               /* Espace autour de l’icône */
+  margin-right: 8px;          /* Espace entre l’icône et le texte */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.loisir {
+  float: right;
+  margin-top: 40px;
+}
+
+.loisir i {
+  background-color: #f0f0f0;  /* Couleur de fond (modifiable) */
+  border: 1px solid #0d0d0d;     /* Bordure fine autour de l’icône */
+  border-radius: 50%;         /* Arrondi complet pour faire un cercle */
+  padding: 4px;               /* Espace autour de l’icône */
+  margin-right: 8px;          /* Espace entre l’icône et le texte */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@media all and (max-width:500px);
