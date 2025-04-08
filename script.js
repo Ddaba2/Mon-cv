@@ -24,8 +24,8 @@ function download() {
       scrollY: 0,
     },
     jsPDF: {
-      unit: 'mm',
-      format: 'a4',
+      unit: 'px',
+      format: [1500, 2500],
       orientation: 'portrait',
     }
   };
