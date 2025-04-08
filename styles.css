@@ -35,7 +35,7 @@
 .conte {
   padding: 20px auto;
   width: 70%;
-
+  font-size: 16px;
   margin: 0 auto;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -112,13 +112,14 @@
   /* Largeur adaptée */
   width: 100%;
   box-sizing: border-box; 
-  height: 50%;
+  height: 70%;
   
 
 }
 
 .fe{
-  margin-top: 35px;
+  margin-top: 45px;
+ 
   }
 
 .education-header {
@@ -140,7 +141,7 @@
     text-align: center;
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 10px;
+    margin-bottom: 15px;
     color: white;
    }
 
@@ -178,7 +179,7 @@ p {
 
 .comp {
     margin-top: 15px; /* espace en bas de chaque compétence */
-    margin-bottom: 15px;
+    margin-bottom: 5px;
  
   }
 
@@ -231,19 +232,76 @@ i {
   overflow: hidden; 
 }
 
+@media only screen and (max-width: 480px) {
+  body {
+    font-size: 12px;
+    padding: 5px;
+  }
 
-.conte {
-  page-break-inside: avoid;
-}
+  .conte {
+    flex-direction: column;
+    width: 100%;
+    padding: 5px;
+  }
 
+  .left {
+    font-size: 12px;
+    padding: 5px;
+  }
 
-  @media print {
-    body, html, #download {
-      width: 210mm;
-      height: 297mm;
-      margin: 0;
-      padding: 0;
-      overflow: hidden;
-    }
+  .right{
+    font-size: 12px;
+    
   }
   
+  
+  .fe{
+    height: auto;
+    width: 100%;
+    font-size: 12px;
+    padding: 5px; 
+  }
+
+  .ref{
+    font-size: 12px;
+    
+  }
+
+  .education {
+    height: auto;
+    width: 100%;
+    padding: 5px; 
+  }
+
+  .experience {
+    height: auto;
+    width: 100%;
+    padding: 5px;  
+  }
+
+  .apropos {
+    height: auto;
+    width: 100%;
+    padding: 5px;  
+  }
+
+  .profile {
+    height: auto;
+    width: 100%;
+    padding: 5px;  
+  }
+
+  .leur {
+    gap: 5px;
+  }
+
+  button {
+    width: 100%;
+    font-size: 14px;
+  }
+
+  #download {
+    width: 100%;
+    min-height: auto;
+  }
+}
