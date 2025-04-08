@@ -1,6 +1,9 @@
-body {
-  font-size: 16px;
-}
+  body {
+    padding: 0;
+    margin: 0;
+    font-size: 16px;
+  }
+  
 
 .body {
     color: #F5F5F5;
@@ -207,21 +210,24 @@ i {
 
 }
 
-@media only screen and (max-width: 600px) {
-  body {
-    font-size: 14px;
+#download {
+  width: 794px;
+  min-height: 1123px;
+  margin: auto;
+  background: white;
+  padding: 20px;
+  box-sizing: border-box;
+  overflow: hidden; 
+}
+
+
+  @media print {
+    body, html, #download {
+      width: 210mm;
+      height: 297mm;
+      margin: 0;
+      padding: 0;
+      overflow: hidden;
+    }
   }
-
-  i {
-    font-size: 14px; /* Taille encore plus petite pour les petits écrans */
-      margin-right: 8px;
-  }
-
-.right{
-  font-size: 14px;
-}
-
-.left{
-  font-size: 14px;
-}
-}
+  
