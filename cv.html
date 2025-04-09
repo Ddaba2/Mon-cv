@@ -9,14 +9,15 @@
   rel="stylesheet"
   href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
 />
-<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-
+<script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js" integrity="sha512-GsLlZN/3F2ErC5ifS5QtgpiJtWd43JWSuIgh7mbzZ8zBps+dvLusV+eNQATqgA/HdeKFVgA5v3S/cIrLF7QnIg==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
 </head>
 <body>
-<h1>CV Daba DIALLO</h1>
- 
-  <button onclick="location.href='index.html'">Retour à la page d'acceuil</button>  
   
+  <button onclick="location.href='index.html'">Retour à la page d'acceuil</button>  
+
+  <button id="changeColor">Changer de couleur</button>  
+
+  <button onclick="download()">Télécharger mon CV</button>
   
 
   <main class="conte" id="download">
@@ -69,11 +70,15 @@
         <b><i class="fa fa-users" aria-hidden="true"></i> REFERENCES</b>
     </div>
     
-    <b>Abdoulaye YALCOUE</b>
-   <p>Tel: (+223) 70 52 58 85</p> 
+    <div class="fe">
+      <b>Abdoulaye YALCOUE</b>
+      <p>Tel: (+223) 70 52 58 85</p> 
+       
+       <b>Hassane TOURE</b>
+      <p> Tel: (+223) 90 14 76 02</p>
+
+    </div>
     
-    <b>Hassane TOURE</b>
-   <p> Tel: (+223) 90 14 76 02</p>
 </div>
 
           
@@ -89,29 +94,32 @@
         </div>      
 
         <div class="experience">
+        
           <i class="fa fa-briefcase" aria-hidden="true"></i>
-          <b>EXPERIENCE PROFESSIONNELLE</b> <br>
-      
+          <b>EXPERIENCE PROFESSIONNELLE</b> 
+       
           <p><strong>Bénévole</strong> <br>
               à l'Énergie du Mali 
               <span class="date">Nov 2024 - Jan 2025</span></p>
       
           <p><strong>Stagiaire en Développement</strong> <br>
-              à l'Énergie du Mali 
+              à l'Énergie du Mali  
               <span class="date">Juil - Oct 2024</span></p>
       
           <p><strong>Stagiaire en Maintenance Informatique</strong> <br>
-              à IKO SMART S.A.R.L 
+              à IKO SMART S.A.R.L  
               <span class="date">Fév - Mai 2024</span></p>
       
           <p><strong>Stagiaire en Réseau Informatique</strong> <br>
               à Millenium Technologie 
               <span class="date">Nov 2023 - Jan 2024</span></p>
       </div>
-      
-      <div class="competence">
+     
         
-        <b><i class="fa fa-pie-chart" aria-hidden="true"></i> COMPÉTENCES</b> 
+        <div class="competence-header">
+          <b><i class="fa fa-pie-chart" aria-hidden="true"></i> COMPÉTENCES</b>
+        </div>
+        
     
         <div class="comp">
           <b>Suite adobe</b>
@@ -153,8 +161,6 @@
           </div>
         </div>
 
-      </div>
-
       <div class="leur">
         <div class="lang1">
 
@@ -193,9 +199,7 @@
 
   </main>
 
-  <button id="changeColor">Changer de couleur</button>  
-
-  <button onclick="download()">Télécharger mon CV</button>
+  
 <!-- Inclusion de votre script personnalisé -->
 <script src="script.js"></script>
 

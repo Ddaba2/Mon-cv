@@ -15,18 +15,28 @@
 
 
   }
-  
   button {
     background-color: #49919E;
     color: #0b0b0b;
-    padding: 15px 32px;
+    padding: 0.75em 1.5em; /* Utilisation des unités em pour le padding */
     text-align: center;
-    font-size: 16px;
-    margin: 20px;
+    font-size: 1rem; /* Utilisation des unités rem pour la taille de la police */
+    margin: 1em;
     cursor: pointer;
     border: none;
-    border-radius: 5px;
-  }
+    border-radius: 0.3125em; /* Équivalent à 5px */
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button:hover {
+    background-color: #45a049;
+    transform: translateY(-2px); /* Légère élévation au survol */
+}
+
+button:active {
+    transform: translateY(1px); /* Effet d'enfoncement lors du clic */
+}
+
 
   .bar-container {
     background-color: #e0e0e0;
@@ -41,15 +51,10 @@
     height: 100%;
     border-radius: 5px;
   }
-  
-  
-  button:hover {
-    background-color: #45a049;
-  }
-  
+    
 .conte {
-  padding: 20px auto;
-  width: 70%;
+  width: 618px;
+  height: 1138px;
   font-size: 16px;
   margin: 0 auto;
   display: grid;
@@ -58,8 +63,8 @@
 
 }
 .left{
+ 
   background-color: #F5F5F5;
-  padding: 10px;
   color: #000;
   display: flex;
   flex-direction: column;
@@ -100,6 +105,7 @@
 .contacte {
  
   width: 100%; /* ou une largeur spécifique selon votre mise en page */
+  margin-left: 10px;
 }
 
 .contact-title {
@@ -115,63 +121,59 @@
   background-color: #333333;
   font-size: 16px;
   color: white;
-  padding: 19px;
   text-align: left;
-  
   /* Bordures arrondies */
   border-top-left-radius: 999px; 
   border-top-right-radius: 999px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-
   /* Largeur adaptée */
   width: 100%;
+  
   box-sizing: border-box; 
   height: 70%;
-  
-
 }
 
 .fe{
-  margin-top: 45px;
- 
+  margin-top: 40px;
+  margin-left: 2%;
   }
 
 .education-header {
   display: flex;
-  align-items: center;
-  justify-content: center;
-  text-align: center;
+  align-items: left;
+  justify-content: left;
+  text-align: left;
   font-size: 18px;
   font-weight: bold;
-  margin-bottom: 7px;
   color: white;
-  margin-top: 7px;
+  margin-top: 30%;
+  margin-left: 5%;
 }
 
 .ref{
     display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
+    align-items: left;
+    justify-content: left;
+    text-align: left;
     font-size: 18px;
     font-weight: bold;
-    margin-bottom: 15px;
+    margin-bottom: 30px;
+    margin-left: 5%;
     color: white;
    }
 
-
 .right {
- 
   font-size: 16px;
   color: #000;
+  margin-right: 20px;
  
 
 }
 
 .apropos b {
   display: block; /* Transforme la balise <b> en élément de type bloc */
-  text-align: center; /* Centre le texte */
+  text-align: left; 
   margin-bottom: 10px; /* Ajoute une marge en bas pour l'espacement */
 }
 
@@ -184,24 +186,29 @@
   font-size: 16px;
 }
 
+
+
 p {
   position: relative;
 }
 
 .date {
   float: right;
+  margin-right: 20px;
+  margin-top: 10px;
 }
 
 .comp {
     margin-top: 15px; /* espace en bas de chaque compétence */
     margin-bottom: 5px;
- 
+    width: 90%;
   }
 
 .leur{
 display: flex;
 align-items: center;
 justify-content: space-between;
+font-weight: bold;
 }
 .lang1{
   display: block;
@@ -249,97 +256,40 @@ i {
   justify-content: center;
   font-size: 16px;
   transition: font-size 0.3s ease;
-  
-
 }
 
-#download {
-  width: 794px;
-  min-height: 1123px;
-  margin: auto;
-  background: white;
-  padding: 14px;
-  box-sizing: border-box;
-  overflow: hidden; 
+.competence-header {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+  font-size: 18px;
+  font-weight: bold;
+  color: black;
+  margin-left: 5%;
+  margin-top: 30px;
 }
 
 @media only screen and (max-width: 480px) {
+
   body {
+    position: absolute;
+    padding: 0;
+    margin: 0;
     font-size: 12px;
-    padding: 5px;
-  }
-
-  .conte {
-    flex-direction: column;
-    width: 100%;
-    padding: 5px;
-  }
-
-  .left {
-    font-size: 12px;
-    padding: 5px;
-  }
-
-  .right{
-    font-size: 12px;
-    
+  
   }
   
+
+.body {
+    font-size: 12px;
+    padding: 0;
+    margin: 0;
   
-  .fe{
-    height: auto;
-    width: 100%;
-    font-size: 12px;
-    padding: 5px; 
-  }
-
-  .ref{
-    font-size: 12px;
-    
-  }
-
-  .education {
-    height: auto;
-    width: 100%;
-    padding: 5px; 
-  }
-
-  .education-header {
-    font-size: 12px;
-    height: auto;
-    width: 100%;
-    margin-top: 40px;
-  }
-
-  .experience {
-    height: auto;
-    width: 100%;
-    padding: 5px;  
-  }
-
-  .apropos {
-    height: auto;
-    width: 100%;
-    padding: 5px;  
-  }
-
-  .profile {
-    height: auto;
-    width: 100%;
-    padding: 5px;  
-  }
-
-  .leur {
-    gap: 5px;
-  }
-
-  button {
-    width: 100%;
-    font-size: 14px;
-  }
-
-  #download {
-    width: 100%;
-    min-height: auto;
-  }
+}
+.conte {
+ 
+  font-size: 12px;
+  margin: 0;
+  padding: 0;
+}
 }

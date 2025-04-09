@@ -15,7 +15,7 @@ const target = document.querySelector('.conte');
 function download() {
   const element = document.getElementById('download');
   const opt = {
-    margin: 0,
+    margin: 0, // Définir la marge à 0
     filename: 'CV_Daba_DIALLO.pdf',
     image: { type: 'png', quality: 1 },
     html2canvas: {
@@ -25,7 +25,7 @@ function download() {
     },
     jsPDF: {
       unit: 'px',
-      format: [1500, 2500],
+      format: [618, 1138],
       orientation: 'portrait',
     }
   };
